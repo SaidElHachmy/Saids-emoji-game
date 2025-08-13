@@ -1595,7 +1595,7 @@ function getFourRandomItems() {
     ];
 
     let selectedItems = [];
-    while (selectedItems.length < 4) {
+    while (selectedItems.length < 5) {
         let randomItem = items[Math.floor(Math.random() * items.length)];
         if (!selectedItems.some(item => item.name === randomItem.name)) {
             selectedItems.push(randomItem);
