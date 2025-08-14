@@ -749,7 +749,7 @@ function getFourRandomItems() {
         
         //Travel & Places
         
-        { name: "yellow bus", emoji: "🚌" },
+        { name: "bus", emoji: "🚌" },
   { name: "race car", emoji: "🏎️" },
   { name: "ambulance", emoji: "🚑" },
   { name: "fire truck", emoji: "🚒" },
@@ -757,7 +757,7 @@ function getFourRandomItems() {
   { name: "pickup truck", emoji: "🛻" },
   { name: "delivery truck", emoji: "🚚" },
   { name: "tractor", emoji: "🚛" },
-  { name: "red tractor", emoji: "🚜" },
+  { name: "green tractor", emoji: "🚜" },
   { name: "guide dog", emoji: "🦯" },
   { name: "manual wheelchair", emoji: "🦽" },
   { name: "motorized wheelchair", emoji: "🦼" },
@@ -1354,7 +1354,7 @@ function getFourRandomItems() {
   { name: "pirate flag", emoji: "🏴‍☠️" },
   { name: "checkered flag", emoji: "🏁" },
   { name: "red flag", emoji: "🚩" },
-  { name: "flag of Mauritania", emoji: "🇲🇷" },
+  { name: "flag of Mauritania ♥️", emoji: "🇲🇷" },
   { name: "United Nations flag", emoji: "🇺🇳" },
   { name: "flag of Afghanistan", emoji: "🇦🇫" },
   { name: "flag of Åland Islands", emoji: "🇦🇽" },
@@ -1512,7 +1512,7 @@ function getFourRandomItems() {
   { name: "flag of Oman", emoji: "🇴🇲" },
   { name: "flag of Pakistan", emoji: "🇵🇰" },
   { name: "flag of Palau", emoji: "🇵🇼" },
-  { name: "flag of ♡ 𓂆 Palestine ᥫ᭡  ♡ ", emoji: "🇵🇸" },
+  { name: "flag of ♡ 𓂆 Palestine ♥️ ᥫ᭡  ♡ ", emoji: "🇵🇸" },
         
         { name: "flag of Panama", emoji: "🇵🇦" },
   { name: "flag of Papua New Guinea", emoji: "🇵🇬" },
