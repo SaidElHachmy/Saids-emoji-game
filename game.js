@@ -1595,7 +1595,7 @@ function getFourRandomItems() {
     ];
 
     let selectedItems = [];
-    while (selectedItems.length < 5) {
+    while (selectedItems.length < 4) {
         let randomItem = items[Math.floor(Math.random() * items.length)];
         if (!selectedItems.some(item => item.name === randomItem.name)) {
             selectedItems.push(randomItem);
@@ -1817,7 +1817,7 @@ function showEmojisForLevel() {
         document.querySelectorAll(".emoji-button").forEach((emojiButton) => {
             setRandomPosition(emojiButton);
         });
-    }, 4000);
+    }, 6000);
 }
 
 // Helper function to set a random position for an emoji button
