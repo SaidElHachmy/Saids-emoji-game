@@ -7,7 +7,7 @@ How to Play
 
 1. Start the Game:
 
-Enter your name. Make sure it’s between 3 and 30 characters and contains only letters and spaces.
+Press the button "Start" to start the game
 
 
 
