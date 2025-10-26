@@ -112,7 +112,7 @@ function getFourRandomItems() {
   { name: "bison", emoji: "🦬" },
   { name: "water buffalo", emoji: "🐃" },
   { name: "ox", emoji: "🐂" },
-  { name: "cow face", emoji: "🐄" },
+  { name: "cow", emoji: "🐄" },
   { name: "donkey", emoji: "🫏" },
   { name: "horse", emoji: "🐎" },
   { name: "pig", emoji: "🐖" },
@@ -138,15 +138,15 @@ function getFourRandomItems() {
   { name: "swan", emoji: "🦢" },
   { name: "flamingo", emoji: "🦩" },
   { name: "dove", emoji: "🕊️" },
-  { name: "rabbit face", emoji: "🐇" },
-  { name: "raccoon", emoji: "🦝" },
+  { name: "rabbit", emoji: "🐇" },
+  { name: "raccoon face", emoji: "🦝" },
   { name: "skunk", emoji: "🦨" },
   { name: "badger", emoji: "🦡" },
   { name: "beaver", emoji: "🦫" },
   { name: "otter", emoji: "🦦" },
         
         { name: "sloth", emoji: "🦥" },
-  { name: "mouse face", emoji: "🐁" },
+  { name: "mouse", emoji: "🐁" },
   { name: "rat", emoji: "🐀" },
   { name: "chipmunk", emoji: "🐿️" },
   { name: "hedgehog", emoji: "🦔" },
@@ -1615,16 +1615,16 @@ function showHint() {
     const emojiContainer = document.getElementById("emoji-play-zone");
     const emojis = emojiContainer.getElementsByClassName("emoji-button");
 
-    console.log("Available emojis:", emojis.length);
+    //console.log("Available emojis:", emojis.length);
 
     if (remainingHints > 0) {
         alert(`Right now you have  ${remainingHints} hint(s), but be very careful using the hint(s), because I do make mistakes sometimes                         — Said ElHachmy`);
         for (let i = 0; i < emojis.length; i++) {
             if (!emojis[i].style.border) {
-                emojis[i].style.border = "2px solid #fff";
-                emojis[i].style.backgroundColor = "#4b280a";
+                emojis[i].style.border = "2px solid yellow";
+                emojis[i].style.backgroundColor = "black";
                 remainingHints--;
-                console.log(`Hint used! Remaining hints: ${remainingHints}`);
+                //console.log(`Hint used! Remaining hints: ${remainingHints}`);
                 break;
             }
         }
@@ -1635,7 +1635,12 @@ function showHint() {
 
     if (remainingHints === 0) {
         document.getElementById("hint-btn").disabled = true;
+        document.getElementById("hint-btn").style.backgroundColor= "gray";
+        document.getElementById("hint-btn").style.color= "white";
+        document.getElementById("hint-btn").style.boxShadow= "0 0 10px black";
     }
+    
+    
 }
 
 
@@ -1644,7 +1649,7 @@ function showHint() {
 // Function to reset for the new level (resetting hints)
 function startNewLevel() {
     remainingHints = 2; // Adjust this if you want more hints per level
-    console.log("New level started. Remaining hints reset to:", remainingHints);
+    //console.log("New level started. Remaining hints reset to:", remainingHints);
 
     const emojis = document.querySelectorAll(".emoji-button");
     emojis.forEach((emoji) => {
@@ -1653,6 +1658,9 @@ function startNewLevel() {
     });
 
     document.getElementById("hint-btn").disabled = false;
+    document.getElementById("hint-btn").style.backgroundColor= "black";
+        document.getElementById("hint-btn").style.color= "yellow";
+        document.getElementById("hint-btn").style.boxShadow= "0 0 10px yellow";
     loadLevel();
 }
 
@@ -1661,7 +1669,7 @@ function updateLevel() {
     const levelDisplay = document.getElementById("level");
     if (levelDisplay) {
         levelDisplay.textContent = `Level ${currentLevel}`;
-        console.log(`Level updated to: ${currentLevel}`);
+        //console.log(`Level updated to: ${currentLevel}`);
     } else {
         console.error("Level display element not found!");
     }
@@ -1669,7 +1677,7 @@ function updateLevel() {
 
 // Function to load level and select items for guessing
 function loadLevel() {
-    console.log("Loading new level...");
+    //console.log("Loading new level...");
 
     updateLevel();
     itemsToGuess = getFourRandomItems();
@@ -1703,7 +1711,7 @@ function startGame() {
     currentLevel = 1;
     incorrectAttempts = 0;
 
-    console.log("Game started! Current level:", currentLevel);
+    //console.log("Game started! Current level:", currentLevel);
 
     loadLevel();
 }
@@ -1860,6 +1868,7 @@ function showPopupMessage() {
 // Music Control Functions
 
 // Global variable to store music
+/*
 
 // Function to start music
 let audio = new Audio('D&D.mp3'); // Replace with your audio file path
@@ -1887,5 +1896,5 @@ function resetMusic() {
 document.getElementById('start-music-btn').addEventListener('click', startMusic);
 document.getElementById('stop-music-btn').addEventListener('click', stopMusic);
 document.getElementById('reset-music-btn').addEventListener('click', resetMusic);
-
+*/
 //try this
