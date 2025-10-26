@@ -1898,3 +1898,26 @@ document.getElementById('stop-music-btn').addEventListener('click', stopMusic);
 document.getElementById('reset-music-btn').addEventListener('click', resetMusic);
 */
 //try this
+//try this
+
+
+// Get the buttons
+const startBtn = document.getElementById("start-btn");
+const hintBtn = document.getElementById("hint-btn");
+const resetBtn = document.getElementById("reset-game");
+
+// Hide the hint button by default
+hintBtn.style.display = "none";
+
+// When the Start button is clicked
+startBtn.addEventListener("click", () => {
+  hintBtn.style.display = "inline-block"; // Show the hint button
+});
+
+// When the Reset button is clicked
+resetBtn.addEventListener("click", () => {
+  hintBtn.style.display = "none"; // Hide the hint button again
+});
+
+
+
