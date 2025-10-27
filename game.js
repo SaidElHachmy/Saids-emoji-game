@@ -1909,43 +1909,46 @@ document.getElementById('reset-music-btn').addEventListener('click', resetMusic)
 //try this
 
 
-// Get the buttons
-const startBtn = document.getElementById("start-btn");
-const hintBtn = document.getElementById("hint-btn");
-const resetBtn = document.getElementById("reset-game");
-const levelShow = document.getElementById("level");
+// Wait for the DOM to fully load before running the code
+document.addEventListener("DOMContentLoaded", () => {
 
+  // Get the buttons
+  const startBtn = document.getElementById("start-btn");
+  const hintBtn = document.getElementById("hint-btn");
+  const resetBtn = document.getElementById("reset-game");
+  const levelShow = document.getElementById("level");
 
-// Hide the levelShow by default
-levelShow.style.display = "none";
+  if (!startBtn || !hintBtn || !resetBtn || !levelShow) {
+    console.error("One or more buttons not found in the HTML!");
+    return;
+  }
 
-// Hide the hint button by default
-hintBtn.style.display = "none";
+  // Hide the levelShow by default
+  levelShow.style.display = "none";
 
-// Hide the reset-game button by default
-resetBtn.style.display = "none";
+  // Hide the hint button by default
+  hintBtn.style.display = "none";
 
+  // Hide the reset-game button by default
+  resetBtn.style.display = "none";
 
+  // When the Start button is clicked
+  startBtn.addEventListener("click", () => {
+    // Only show if they are hidden
+    levelShow.style.display = "inline-block";
+    hintBtn.style.display = "inline-block";
+    resetBtn.style.display = "inline-block";
+  });
 
-// When the Start button is clicked
-startBtn.addEventListener("click", () => {
-  
-  
-  
+  // When the Reset button is clicked
+  resetBtn.addEventListener("click", () => {
+    // Hide them safely
+    levelShow.style.display = "none";
+    hintBtn.style.display = "none";
+    resetBtn.style.display = "none";
 
-  
-  levelShow.style.display = "inline-block"; // Show the levelShow
-  
-  hintBtn.style.display = "inline-block"; // Show the hint button
-  resetBtn.style.display = "inline-block"; // Show the reset-game button
-});
-
-// When the Reset button is clicked
-resetBtn.addEventListener("click", () => {
- 
-
- levelShow.style.display = "none"; // Hide the levelShow again
- 
-  hintBtn.style.display = "none"; // Hide the hint button again
-  resetBtn.style.display = "none"; // Hide the reset-game button again
+    // Optional: reset game logic or visual state (if needed)
+    // For example, if your game uses variables, reset them here
+    //console.log("Game reset!");
+  });
 });
