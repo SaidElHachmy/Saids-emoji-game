@@ -1904,14 +1904,17 @@ document.getElementById('reset-music-btn').addEventListener('click', resetMusic)
 //try this
 
 
+//try this
+
+//try this
+
+
 // Get the buttons
 const startBtn = document.getElementById("start-btn");
 const hintBtn = document.getElementById("hint-btn");
 const resetBtn = document.getElementById("reset-game");
 const levelShow = document.getElementById("level");
-const imgLogo = document.getElementById("logo");
 
-imgLogo.style.display = "inline-block"; // Show the imgLogo
 
 // Hide the levelShow by default
 levelShow.style.display = "none";
@@ -1929,8 +1932,6 @@ startBtn.addEventListener("click", () => {
   
   
   
-  // Hide the imgLogo by default
-imgLogo.style.display = "none";
 
   
   levelShow.style.display = "inline-block"; // Show the levelShow
@@ -1942,13 +1943,9 @@ imgLogo.style.display = "none";
 // When the Reset button is clicked
 resetBtn.addEventListener("click", () => {
  
- imgLogo.style.display = "inline-block"; // Show the imgLogo
- 
+
  levelShow.style.display = "none"; // Hide the levelShow again
  
   hintBtn.style.display = "none"; // Hide the hint button again
   resetBtn.style.display = "none"; // Hide the reset-game button again
 });
-
-
-
