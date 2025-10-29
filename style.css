@@ -110,6 +110,8 @@ button:hover{
 #hint-btn{
     background-color: rgba(0, 0, 0, 0.8);
     box-shadow: 0 0 10px yellow;
+    margin: 1px auto;
+    
     color:yellow;
 }
 a{
@@ -120,25 +122,27 @@ a{
   box-shadow: 0 0 10px lightblue;
   border-radius: 5px;
   
+  
   transform: scale(0.95);
 }
 
 /* Start Game Button */
 #start-btn {
-    width: 140px;
-    height: 40px;
+    width: 130px;
+    height: 35px;
     padding: 5px;
     /*background-color: black;*/
     
     
     color:white;
+    margin: 1px auto;
     
     background-color: rgba(0, 0, 139, 0.8);
     box-shadow: 0 0 10px white;
     
     position: relative;
-    font-size: 26px;
-    margin-bottom: 20px;
+    font-size: 24px;
+    /*margin-bottom: 20px;*/
     /*box-shadow: 0 0 10px #4b280a;*/
     
 }
@@ -155,18 +159,22 @@ a{
 
 /* Reset Game Button */
 #reset-game  {
-    width: 135px;
+    width: 130px;
     height: 35px;
     padding: 5px;
-   /* background-color: black;*/
-    /*color: white;*/
-    border-radius: 15px;
-    font-size: 15px;
-    /*box-shadow: 0 0 10px #4b280a;*/
+    /*background-color: black;*/
+    
+    
     color:white;
+    margin: 1px auto;
     
     background-color: rgba(0, 0, 139, 0.8);
     box-shadow: 0 0 10px white;
+    
+    position: relative;
+    font-size: 24px;
+    /*margin-bottom: 20px;*/
+    /*box-shadow: 0 0 10px #4b280a;*/
 }
 
 #reset-game:hover{
@@ -189,17 +197,29 @@ a{
 /* Contact Us Button */
 #Contact-Us {
     text-decoration: none;
-    /*background-color: black;
-    color: white;*/
-    color:white;
+   
+    width: 130px;
+    height: 35px;
     padding: 5px;
+    /*background-color: black;*/
+    
+    
+    color:white;
+    margin: 1px auto;
     
     background-color: rgba(0, 0, 139, 0.8);
     box-shadow: 0 0 10px white;
-    padding: 10px 20px;
-    border-radius: 10px;
-   /* box-shadow: 0 0 10px #4b280a;*/
+    
+    position: relative;
+    font-size: 24px;
+    /*margin-bottom: 20px;*/
+    /*box-shadow: 0 0 10px #4b280a;*/
   transform: scale(0.95);
+}
+#Contact-Us  a{
+    text-decoration: none;
+    color: white;
+    
 }
 #Contact-Us:hover{
     box-shadow: 0 0 10px darkblue;
