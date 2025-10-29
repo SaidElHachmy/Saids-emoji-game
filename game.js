@@ -1911,15 +1911,27 @@ document.getElementById('reset-music-btn').addEventListener('click', resetMusic)
 
 //try this
 
+//try this
+
+//try this
+
+
+//try this
+
 
 // Wait for the DOM to fully load before running the code
 document.addEventListener("DOMContentLoaded", () => {
+    
+    const btnDivs=document.getElementById("btn-divs")
 
   // Get the buttons
   const startBtn = document.getElementById("start-btn");
   const hintBtn = document.getElementById("hint-btn");
   const resetBtn = document.getElementById("reset-game");
+  const ContactUs = document.getElementById("Contact-Us");
   const levelShow = document.getElementById("level");
+  
+  btnDivs.append(startBtn,hintBtn,resetBtn,ContactUs)
 
   if (!startBtn || !hintBtn || !resetBtn || !levelShow) {
     console.error("One or more buttons not found in the HTML!");
@@ -1955,3 +1967,9 @@ document.addEventListener("DOMContentLoaded", () => {
     //console.log("Game reset!");
   });
 });
+
+
+
+
+
+
