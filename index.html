@@ -16,11 +16,13 @@
     <!-- This is where we will display the welcome message -->
     <div id="welcomeMessage"></div>
     
+    <div id="level"><b>Level: 1</b></div>
     
-    <div id="game-container">
+    
+    <div id="game-container" >
     <!-- Game Area -->
-    <div id="emoji-play-zone">
-        <div id="emoji-container"></div>
+    <div id="emoji-play-zone" style="margin-top:117px">
+        <div id="emoji-container" ></div>
     </div>
     
     <!-- Other game elements outside of the play zone -->
@@ -28,45 +30,29 @@
             <div id="popup-message"></div>
         </div>
         
-        <div id="level"><b>Level: 1</b></div>
+
     
     
-    
-    <!-- Background Music-->
-    <!--
-        <audio id="background-music" loop>
-    <source src="D&D.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-</audio>
-    -->
-    <!-- Button Container -->
-    <!--
-    <div id="button-container">
-        <!-- Music Buttons -->
-        <!---
-        <div class="music-buttons-container">
-            <button id="Start-music-btn" class="music-button" onclick="startMusic()">Start Music</button>
-            <button id="Stop-music-btn" class="music-button" onclick="stopMusic()">Stop Music</button>
-            <button id="reset-music-btn" class="music-button" onclick="resetMusic()">Reset Music</button>
-        </div>
-       --> 
-        
-        <!-- Start Game Button -->
-        
-            
+
 
             
-        
-    <button id="start-btn" onclick="startGame()"><b>Start</b></button>
+        <div id="btn-divs" style="padding:10px; display:grid;">
+
+        </div>
+    <button id="start-btn" onclick="startGame()" style="margin:5px"><b>Start</b></button>
 
         <!-- Hint and Reset Game Buttons -->
         
-        <button id="hint-btn" onclick="showHint()">Hint</button>
+        <button id="hint-btn" onclick="showHint()"style="margin:5px">Hint</button>
         
-        <button id="reset-game"> <a href="index.html"><b>Reset</b></a></button>
+        <button id="reset-game"> <a href="index.html"style="margin:5px"><b>Reset</b></a></button>
 
         <!-- Contact Us Button -->
-        <a id="Contact-Us" href="https://saidelhachmy.github.io/#about"> <b>Contact Us</b></a>
+        <button id="Contact-Us">
+            
+            <a href="https://saidelhachmy.github.io/#about"> <b>Contact</b></a>
+        </button>
+
     </div>
 </div>
 
