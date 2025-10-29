@@ -1725,7 +1725,8 @@ function checkAnswer(selectedItem) {
 
     if (selectedItem === currentItem.name) {
         // Correct answer logic
-        popupMessage.innerHTML = `Correct! You found the ${currentItem.name}.<br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Said ElHachmy</strong>`;
+        popupMessage.innerHTML = `Correct! You found the <span style="border-bottom:2px solid red">${currentItem.name}</span>.<br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Said ElHachmy</strong>`;
+        
         currentItemIndex++;
         incorrectAttempts = 0;
 
@@ -1749,8 +1750,8 @@ function checkAnswer(selectedItem) {
         }
     } else {
         // Incorrect answer logic
-        popupMessage.innerHTML = `Incorrect! Try again. ( ${currentItem.name} !) <br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  — Said ElHachmy</strong>`;
-
+        popupMessage.innerHTML = `Incorrect! Try again. ( <span style="border-bottom:2px solid red">${currentItem.name} </span>!) <br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  — Said ElHachmy</strong>`;
+        
         // Change the body background color to red for an incorrect answer
         document.body.style.backgroundColor = "red"; 
 
@@ -1857,7 +1858,9 @@ function showPopupMessage() {
 
     if (popup && popupMessage && currentItem) {
         popup.style.display = "block";
-        popupMessage.innerHTML = `Where is the <b>${currentItem.name}</b>?<br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Said ElHachmy</strong>`;
+        popupMessage.innerHTML = `Where is the
+        <span style="color:red;border-bottom:2px solid darkblue"><b>${currentItem.name}</b></span>?<br><br><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; — Said ElHachmy</strong>`;
+        
         popupMessage.style.backgroundColor = "";
     } else {
         console.error("Popup or popupMessage element not found, or currentItem is undefined!");
